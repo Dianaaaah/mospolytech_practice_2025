@@ -8,6 +8,12 @@ body {
   flex-direction: column;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 header, footer {
   background-color: #ffc0cb;
   color: #333;
@@ -15,8 +21,14 @@ header, footer {
   text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 nav a {
-  margin: 0 1rem;
   text-decoration: none;
   color: #c71585;
   font-weight: bold;
@@ -24,49 +36,8 @@ nav a {
 
 main {
   padding: 2rem;
-  max-width: 1200px;
   margin: auto;
   flex: 1;
-}
-
-/* Стили для страницы team.html */
-body.team-page main {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-body.team-page .team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  flex: 1;
-  min-width: 300px;
-  max-width: 350px;
-  height: 100%;
-}
-
-body.team-page .team-member img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-body.team-page .team-member div {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-body.team-page .team-member strong {
-  display: inline;
-  margin-bottom: 0.5rem;
 }
 
 h1, h2 {
@@ -75,7 +46,7 @@ h1, h2 {
 
 img {
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 8px;
   margin-bottom: 1rem;
 }
 
@@ -87,4 +58,164 @@ footer {
 
 a[href^="http"] {
   color: #000000;
+}
+
+/* Стили для страницы team.html */
+body.team-page main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-member div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team-member strong {
+  display: inline;
+  margin-bottom: 0.5rem;
+}
+
+/* Стили для страницы journal.html */
+body.journal-page main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+body.journal-page img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Стили для страницы partner.html */
+body.partner-page main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.attachments {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+main h3 {
+  color: #c71585;
+  margin-top: 2rem;
+}
+
+main h4 {
+  color: #db7093;
+  margin-top: 1.5rem;
+}
+
+main ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+main ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main ul li::before {
+  content: "•";
+  color: #c71585;
+  position: absolute;
+  left: 0;
+}
+
+main ul li a {
+  text-decoration: none;
+  color: #c71585;
+}
+
+main ul li a:hover {
+  color: #db7093;
+}
+
+/* Стили для страницы results.html */
+body.results-page main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.demo-section {
+  margin-top: 2rem;
+}
+
+.demo-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.demo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  margin: 2rem 0;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
 }

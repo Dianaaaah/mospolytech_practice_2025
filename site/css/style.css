@@ -219,3 +219,66 @@ body.results-page main {
   width: 100%;
   border-radius: 8px;
 }
+
+/* Стили для страницы telegram-bot.html */
+body.telegram-bot-page main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.telegram-bot-page h3 {
+  color: #c71585;
+  margin-top: 2rem;
+}
+
+.telegram-bot-page h4 {
+  color: #db7093;
+  margin-top: 1.5rem;
+}
+
+.telegram-bot-page ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.telegram-bot-page ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.telegram-bot-page ul li::before {
+  content: "•";
+  color: #c71585;
+  position: absolute;
+  left: 0;
+}
+
+.telegram-bot-page pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.telegram-bot-page code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+.diagrams {
+  margin-top: 2rem;
+}
+
+.diagram {
+  margin-bottom: 2rem;
+}
+
+.diagram img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
